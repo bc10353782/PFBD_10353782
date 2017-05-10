@@ -51,19 +51,19 @@ if (selection <= 5) {
   
   print(paste(num1, operator, num2, "=", result))
   
-  def cube(num1):
-    return num1 ** 3.0
+#  def cube(num1):
+#    return num1 ** 3.0
     #   Square function, takes input and squares num1
-  def square(num1):
-    return num1 ** float(num1)
+#  def square(num1):
+#    return num1 ** float(num1)
     #   Square Root function, takes input and gives square root of num1
-  def sqrt(num1):
-    return round((num1 ** .5),2)
+#  def sqrt(num1):
+#    return round((num1 ** .5),2)
     #   Radian function, takes num1 and converts to radians
-  def rad(num1):
-    return round((num1 * 3.1415926536/180),2)
+#  def rad(num1):
+#    return round((num1 * 3.1415926536/180),2)
     #   Degree function, takes num1 and converts to degrees
-  def deg(num1):
-    return round((num1 * 180/3.1415926536),2)
+#  def deg(num1):
+#    return round((num1 * 180/3.1415926536),2)
   
   
