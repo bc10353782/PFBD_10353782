@@ -36,35 +36,27 @@ print("5.Exponent")
 print("6.Cube")
 
 selection = as.integer(readline(prompt="Enter choice 1 ,2, 3, 4, 5, 6        :   "  ))
+num1 = as.numeric(readline(prompt="Enter first number: "))
 if (selection <= 5) {
-  num1 = as.numeric(readline(prompt="Enter first number: "))
   num2 = as.numeric(readline(prompt="Enter second number: "))
-
-  operator <- switch(selection,"+","-","*","/","Exp","Cube")
-  result <- switch(selection, add(num1, num2), subtract(num1, num2), multiply(num1, num2), divide(num1, num2), exponent(num1, num2), cube(num))
-
-  print(paste(num1, operator, num2, "=", result))
-} else if (selection > 5) {
-  num = as.numeric(readline(prompt="Enter number: "))
-  
-  operator <- switch(selection,"+","-","*","/","Exp","Cube")
-  result <- switch(selection, add(num1, num2), subtract(num1, num2), multiply(num1, num2), divide(num1, num2), exponent(num1, num2), cube(num))
-  
-  print(paste(num, operator, "=", result))
 }  
+operator <- switch(selection,"+","-","*","/","Exp","Cube")
+result <- switch(selection, add(num1, num2), subtract(num1, num2), multiply(num1, num2), divide(num1, num2), exponent(num1, num2), cube(num))
+if (selection <= 5) {
+  print(paste(num1, operator, num2, "=", result))
+} else
+  print(paste(num1, operator, "=", result))
+
 #  def cube(num1):
 #    return num1 ** 3.0
-    #   Square function, takes input and squares num1
+#   Square function, takes input and squares num1
 #  def square(num1):
 #    return num1 ** float(num1)
-    #   Square Root function, takes input and gives square root of num1
+#   Square Root function, takes input and gives square root of num1
 #  def sqrt(num1):
 #    return round((num1 ** .5),2)
-    #   Radian function, takes num1 and converts to radians
+#   Radian function, takes num1 and converts to radians
 #  def rad(num1):
 #    return round((num1 * 3.1415926536/180),2)
-    #   Degree function, takes num1 and converts to degrees
+#   Degree function, takes num1 and converts to degrees
 #  def deg(num1):
-#    return round((num1 * 180/3.1415926536),2)
-  
-  
