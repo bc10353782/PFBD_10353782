@@ -19,10 +19,12 @@ divide <- function(x, y) {
 exponent <- function(x,y){
   return(x**y)
 }
+print (exponent(3,3))
 
 cube <- function(x){
   return(x**3.0)
 }
+print (cube(4))
 
 # take input from the user
 print("Select operation.")
@@ -33,24 +35,23 @@ print("4.Divide")
 print("5.Exponent")
 print("6.Cube")
 
-selection = as.integer(readline(prompt="Enter choice
-                                1 ,2, 3, 4, 5, 6 "))
+selection = as.integer(readline(prompt="Enter choice 1 ,2, 3, 4, 5, 6        :   "  ))
 if (selection <= 5) {
   num1 = as.numeric(readline(prompt="Enter first number: "))
   num2 = as.numeric(readline(prompt="Enter second number: "))
 
-  operator <- switch(selection,"+","-","*","/")
-  result <- switch(selection, add(num1, num2), subtract(num1, num2), multiply(num1, num2), divide(num1, num2), exponent(num1, num2))
+  operator <- switch(selection,"+","-","*","/","Exp","Cube")
+  result <- switch(selection, add(num1, num2), subtract(num1, num2), multiply(num1, num2), divide(num1, num2), exponent(num1, num2), cube(num))
 
   print(paste(num1, operator, num2, "=", result))
 } else if (selection > 5) {
-  num1 = as.numeric(readline(prompt="Enter number: "))
+  num = as.numeric(readline(prompt="Enter number: "))
   
-  operator <- switch(selection,"+","-","*","/")
-  result <- switch(selection, add(num1, num2), subtract(num1, num2), multiply(num1, num2), divide(num1, num2), exponent(num1, num2))
+  operator <- switch(selection,"+","-","*","/","Exp","Cube")
+  result <- switch(selection, add(num1, num2), subtract(num1, num2), multiply(num1, num2), divide(num1, num2), exponent(num1, num2), cube(num))
   
-  print(paste(num1, operator, num2, "=", result))
-  
+  print(paste(num, operator, "=", result))
+}  
 #  def cube(num1):
 #    return num1 ** 3.0
     #   Square function, takes input and squares num1
