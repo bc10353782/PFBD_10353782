@@ -1,4 +1,4 @@
-#  Brian Cleary 10353782
+#   10353782  Brian Cleary
 # Program make a simple calculator that can add, subtract, multiply and divide using functions
 
 add <- function(x, y) {
