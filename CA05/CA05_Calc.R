@@ -33,7 +33,7 @@ square <- function(x){
 #8
 #squareroot <- function(x){
 #  return(sqrt(x))  
-}
+#}
 #9    
 #rad <- function(x){
 #  return(x**3.0)
