@@ -64,7 +64,7 @@ if (selection <= 5) {
 }  
 operator <- switch(selection,"+","-","*","/","Exp","Cube","Square","Squareroot","Radian","Degree")
 result <- switch(selection, add(num1, num2), subtract(num1, num2), multiply(num1, num2), divide(num1, num2), 
-                 exponent(num1, num2), cube(num1), square(num1), squareroot(num1), rad(num1), deg(num1))
+                 exponent(num1, num2), cube(num1), square(num1), squareroot(num1), rad(num1), degree(num1))
 if (selection <= 5) {
   print(paste(num1, operator, num2, "=", result))
 } else
