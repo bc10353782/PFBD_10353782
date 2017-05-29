@@ -13,8 +13,7 @@ print(len(data))
 
 sep = 72*'-'
 
-# create the commit class to hold each of the elements - I am hoping there will be 422
-# otherwise I have messed up.
+# create the commit class to hold each of the elements 
 class Commit:
     'class for commits'
  #      Adding the = None sets the default. It means that you do not have to specify a variable name at each point.  
@@ -30,11 +29,6 @@ a_commit= Commit('r1551925', 'Thomas', '2015/11/27', 1, None, 'Renamed folder to
 
 print a_commit.author
 print a_commit.comment
-
-
-
-
-
 
 index = 0
 current_commit = None
