@@ -27,10 +27,16 @@ a_commit= Commit('r1551925', 'Thomas', '2015/11/27', 1, None, 'Renamed folder to
 
 print a_commit.author
 print a_commit.comment
+#   Analyse the data
+def analyse_data(data):
+# Create lists and set index to zero
+	commits = []
+	current_commit = None
+	index = 0
+	revisions = []
+	authors = []
+	dates = []
 
-index = 0
-current_commit = None
-commits = []
 
 
 while True:
@@ -48,7 +54,9 @@ while True:
         commits.append(current_commit)
     except IndexError:
         break
-        
+ 	return (commits, revisions, authors, dates)
+
+commits, revisions, authors, dates = analyse_data(data)       
 print len(commits)
 
 commits.reverse()
